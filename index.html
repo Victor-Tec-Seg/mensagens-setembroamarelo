@@ -11,13 +11,16 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f8ff;
             margin: 0;
+            background-image: url('https://github.com/Victor-Tec-Seg/mensagens-setembroamarelo/blob/main/plano%20de%20fundo%20-%20setembro%20amarelo.jpg?raw=true'); /* Insira a URL da imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            position: relative;
         }
         .message-box {
             text-align: center;
             max-width: 600px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para destacar o texto */
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -26,9 +29,18 @@
             font-size: 1.5em;
             color: #333;
         }
+        .logo {
+            position: absolute;
+            bottom: 20px; /* Posiciona a logo 20px a partir do fundo */
+            right: 20px; /* Posiciona a logo 20px a partir da direita */
+            width: 100px; /* Ajuste o tamanho da logo conforme necessário */
+        }
     </style>
 </head>
 <body>
+    <!-- Adiciona a logo -->
+    <img src="https://github.com/Victor-Tec-Seg/mensagens-setembroamarelo/blob/main/5%20-%20LOGO%20TECNOSONDA%20-%20VERDE.png?raw=true" alt="Logo" class="logo"> <!-- Substitua pela URL da logo -->
+
     <div class="message-box">
         <p id="reflectionMessage"></p>
     </div>
