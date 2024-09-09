@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens de Reflexão - Setembro Amarelo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            margin: 0;
+        }
+        .message-box {
+            text-align: center;
+            max-width: 600px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .message-box p {
+            font-size: 1.5em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-box">
+        <p id="reflectionMessage"></p>
+    </div>
+
+    <script>
+        const messages = [
+            "Você não está sozinho, há sempre alguém disposto a ouvir. Se precisar, peça ajuda.",
+            "Pedir ajuda é um ato de coragem, não de fraqueza.",
+            "Sua vida é preciosa e única. Se precisar, peça ajuda.",
+            "Nenhum problema é grande demais quando compartilhado. Fale com alguém.",
+            "Você importa. Se precisar, não hesite em buscar apoio.",
+            "A dor pode ser dividida e o peso pode ser aliviado. Se precisar, peça ajuda.",
+            "Pedir ajuda é um sinal de força e resiliência.",
+            "A esperança se renova a cada dia. Se precisar de suporte, estenda a mão.",
+            "Todo mundo precisa de alguém em algum momento. Não tenha medo de pedir ajuda.",
+            "Você merece ser ouvido e compreendido. Se precisar, fale com alguém.",
+            "Seu valor é incalculável. Se precisar, peça ajuda.",
+            "Não guarde tudo para si. Compartilhe seus sentimentos, você merece apoio.",
+            "A solidão não é a única saída. Se precisar, procure alguém para conversar.",
+            "Ninguém é forte o tempo todo. Se precisar, busque ajuda.",
+            "Existem mãos estendidas ao seu redor. Se precisar, segure uma delas.",
+            "Sua luta é válida, sua dor é real. E você pode pedir ajuda.",
+            "Há luz no fim do túnel, e às vezes ela vem de um amigo. Se precisar, peça ajuda.",
+            "Você é importante demais para enfrentar tudo sozinho. Se precisar, fale com alguém.",
+            "O primeiro passo para a cura é pedir ajuda. E esse passo é o mais corajoso.",
+            "Lembre-se: há pessoas que se importam profundamente com você. Se precisar, peça ajuda."
+        ];
+
+        function getRandomMessage() {
+            const randomIndex = Math.floor(Math.random() * messages.length);
+            return messages[randomIndex];
+        }
+
+        document.getElementById('reflectionMessage').innerText = getRandomMessage();
+    </script>
+</body>
+</html>
