@@ -12,11 +12,11 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: #fbc817; /* Cor de fundo para a área que não é coberta pela imagem */
             background-image: url('https://raw.githubusercontent.com/Victor-Tec-Seg/mensagens-setembroamarelo/main/imagens/setembro-amarelo-shutterstock.jpg?ver=2'); /* Adiciona parâmetro para evitar cache */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            position: relative;
+            background-size: auto; /* Mantém o tamanho original da imagem */
+            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-position: center; /* Centraliza a imagem de fundo */
         }
         .message-box {
             text-align: center;
@@ -39,9 +39,6 @@
         }
         /* Ajustes para telas menores */
         @media (max-width: 768px) {
-            body {
-                background-size: contain;
-            }
             .message-box p {
                 font-size: 1.1em;
             }
@@ -69,7 +66,7 @@
             "Você importa. Se precisar, não hesite em buscar apoio.",
             "A dor pode ser dividida e o peso pode ser aliviado. Se precisar, peça ajuda.",
             "Pedir ajuda é um sinal de força e resiliência.",
-            "A esperança se renova a cada dia. Se precisar de suporte, estenda a mão.",
+            "A esperança se renova a cada dia. Se precisar de suporte, peça ajuda.",
             "Todo mundo precisa de alguém em algum momento. Não tenha medo de pedir ajuda.",
             "Você merece ser ouvido e compreendido. Se precisar, fale com alguém.",
             "Seu valor é incalculável. Se precisar, peça ajuda.",
