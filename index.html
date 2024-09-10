@@ -13,27 +13,42 @@
             height: 100vh;
             margin: 0;
             background-image: url('https://raw.githubusercontent.com/Victor-Tec-Seg/mensagens-setembroamarelo/main/imagens/plano%20de%20fundo%20-%20setembro%20amarelo.jpg');
-            background-size: cover;
+            background-size: cover; /* Ajusta a imagem de fundo para cobrir toda a tela */
             background-position: center;
+            background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
             position: relative;
         }
         .message-box {
             text-align: center;
-            max-width: 600px;
+            max-width: 90%; /* Ajusta a largura para se adaptar a telas menores */
             background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         .message-box p {
-            font-size: 1.5em;
+            font-size: 1.2em; /* Reduz ligeiramente o tamanho da fonte em dispositivos móveis */
             color: #333;
         }
         .logo {
             position: absolute;
             bottom: 20px;
             right: 20px;
-            width: 25%; /* Aumenta o tamanho da logo para 1/4 da largura da tela */
+            width: 25%;
+            max-width: 100px; /* Limita o tamanho máximo da logo em dispositivos menores */
+        }
+        /* Ajustes para telas menores */
+        @media (max-width: 768px) {
+            body {
+                background-size: contain; /* Ajusta a imagem de fundo para caber na tela sem corte em dispositivos menores */
+            }
+            .message-box p {
+                font-size: 1.1em; /* Ajusta o tamanho da fonte para telas menores */
+            }
+            .logo {
+                width: 50%; /* Aumenta o tamanho da logo em dispositivos móveis */
+                max-width: 150px; /* Limita o tamanho máximo da logo em dispositivos menores */
+            }
         }
     </style>
 </head>
@@ -54,7 +69,7 @@
             "Você importa. Se precisar, não hesite em buscar apoio.",
             "A dor pode ser dividida e o peso pode ser aliviado. Se precisar, peça ajuda.",
             "Pedir ajuda é um sinal de força e resiliência.",
-            "A esperança se renova a cada dia. Se precisar de suporte, peça ajuda.",
+            "A esperança se renova a cada dia. Se precisar de suporte, busque ajuda.",
             "Todo mundo precisa de alguém em algum momento. Não tenha medo de pedir ajuda.",
             "Você merece ser ouvido e compreendido. Se precisar, fale com alguém.",
             "Seu valor é incalculável. Se precisar, peça ajuda.",
